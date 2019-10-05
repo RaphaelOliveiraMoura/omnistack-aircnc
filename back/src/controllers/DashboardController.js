@@ -1,5 +1,4 @@
 const Spot = require('../models/Spot');
-const User = require('../models/User');
 
 async function show(request, response) {
   const { user_id } = request.headers;
