@@ -19,7 +19,6 @@ const io = socketio(server);
 const connectedUsers = {};
 
 io.on('connection', socket => {
-  console.log('Usuário conectado', socket.id);
   const { user_id } = socket.handshake.query;
   connectedUsers[user_id] = socket.id;
 });
